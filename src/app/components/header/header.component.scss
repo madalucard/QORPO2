@@ -36,12 +36,15 @@ ul {
   li {
     margin: 0px 30px;
   }
+  & li a.active {
+    color: var(--main-red);
+  }
   & li.home-button {
     margin-left: 70px;
   }
-  & li.register-button {
+  & li.register-button-container {
     background-color: transparent;
-    .xxx {
+    .register-button {
       display: flex;
       align-items: center;
       width: 142px;
