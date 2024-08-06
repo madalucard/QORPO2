@@ -1,27 +1,33 @@
-<nav class="navbar row align-center space-between">
-  <div class="navbar-logo row justify-center align-center">
-    <a href="/" class="row align-center">
-      <img src="assets/svg/logo.svg" alt="Logo" width="45" height="45" />
-    </a>
-  </div>
-  <ul class="navbar-links row full-center">
-    <li class="home-button">
-      <a
-        routerLink="/"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }"
-        >HOME</a
-      >
-    </li>
-    <li><a routerLink="heroes" routerLinkActive="active">HEROES</a></li>
-    <li><a routerLink="story" routerLinkActive="active">STORY</a></li>
-    <li><a routerLink="tournament" routerLinkActive="active">TOURNAMENT</a></li>
-    <li><a routerLink="ambassador" routerLinkActive="active">AMBASSADOR</a></li>
-    <li><a routerLink="token" routerLinkActive="active">TOKEN</a></li>
-    <li class="register-button-container row full-center">
-      <div class="register-button row full-center">
-        <a routerLink="register" routerLinkActive="active">REGISTER</a>
-      </div>
-    </li>
-  </ul>
-</nav>
+<header>
+  <nav class="navbar row align-center space-between">
+    <div class="navbar-logo row justify-center align-center">
+      <a href="/" class="row align-center">
+        <img src="assets/svg/logo.svg" alt="Logo" width="45" height="45" />
+      </a>
+    </div>
+    <ul class="navbar-links row full-center">
+      <li class="home-button">
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >HOME</a
+        >
+      </li>
+      <li><a routerLink="heroes" routerLinkActive="active">HEROES</a></li>
+      <li><a routerLink="story" routerLinkActive="active">STORY</a></li>
+      <li>
+        <a routerLink="tournament" routerLinkActive="active">TOURNAMENT</a>
+      </li>
+      <li>
+        <a routerLink="ambassador" routerLinkActive="active">AMBASSADOR</a>
+      </li>
+      <li><a routerLink="token" routerLinkActive="active">TOKEN</a></li>
+      <li class="register-button-container row full-center">
+        <div class="register-button row full-center">
+          <a routerLink="register" routerLinkActive="active">REGISTER</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
