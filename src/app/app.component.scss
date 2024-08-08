@@ -1,0 +1,13 @@
+.wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+app-header {
+  position: absolute; /* Fixes the header to the top */
+  top: 0px; /* 25px from the top */
+  left: 0px; /* Align with the left edge */
+  width: 100%; /* Full width of the viewport */
+  z-index: 1000; /* High z-index to ensure it stays on top of other elements */
+}
