@@ -5,11 +5,11 @@
     </a>
   </div>
   <div class="hamburger" (click)="toggleNavbar()">
-    <a href="/" class="row align-center">
+    <div class="row align-center">
       <img src="assets/svg/burger.svg" alt="Logo" width="45" height="45" />
-    </a>
+    </div>
   </div>
-  <ul class="navbar-links row full-center">
+  <ul class="navbar-links row full-center" [class.show]="navbarOpen">
     <li class="home-button">
       <a
         routerLink="/"
