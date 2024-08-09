@@ -37,18 +37,37 @@
     align-items: center;
     list-style-type: none;
     font-family: X-Heighting;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 400;
     line-height: 24.8px;
     margin: 0px;
+    padding: 0px;
     background-color: rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(5px);
 
-    li a {
-      color: black;
+    width: 100%;
+
+    li {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      a {
+        color: black;
+        text-shadow: 0px 0px 5px rgb(255, 255, 255);
+      }
+    }
+    & li a.active {
+      color: var(--main-red);
+      text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    }
+    & li:hover {
+      transform: scale(1.1);
+      a {
+        // text-shadow: 1px 1px 5px rgb(0, 0, 0);
+        width: 100%;
+        text-decoration: underline;
+        text-decoration-color: red;
+      }
     }
   }
-
   .hamburger {
     height: 100%;
     width: 146px;
