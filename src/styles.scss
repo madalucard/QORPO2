@@ -28,33 +28,60 @@
 }
 // MOBILE VERSION
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 640px) {
+  //BASE MOBILE GLOBAL STYLE
+  html,
+  body,
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  app-root {
+    height: 100%;
+    background-color: #12151e;
+  }
+
+  app-root {
+    display: flex;
+    flex-direction: column;
+    color: var(--main-white);
+  }
 }
 
-// BASE GLOBAL STYLE
-html,
-body,
-p,
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@media screen and (min-width: 1919px) {
+  // BASE fullHD GLOBAL STYLE
+  html,
+  body,
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-html,
-body,
-app-root {
-  height: 100%;
-  // background-color: #12151e;
-}
+  html,
+  body,
+  app-root {
+    height: 100%;
+    // background-color: #12151e;
+  }
 
-app-root {
-  display: flex;
-  flex-direction: column;
-  color: var(--main-white);
+  app-root {
+    display: flex;
+    flex-direction: column;
+    color: var(--main-white);
+  }
 }
 
 // FLEX GLOBAL STYLE
